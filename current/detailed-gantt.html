@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intro to Game Development — Fall 2026 — deliverables</title>
+<style>
+  body {
+    margin: 0; background: #ffffff;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #0b0b0b;
+  }
+  .wrap { padding: 8px 12px 10px; }
+  header { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 2px 2px 0; }
+  header h1 { font-size: 14px; font-weight: 650; margin: 0; }
+  header .sub { font-size: 12px; color: #52514e; }
+  .mermaid { width: 100%; font-family: system-ui, sans-serif; }
+  /* Recessive chrome: hairline grid, muted axis text (overrides Mermaid defaults) */
+  .mermaid svg .grid .tick line { stroke: #e1e0d9; stroke-width: 1; }
+  .mermaid svg .grid .tick text { fill: #898781; }
+  .mermaid svg .sectionTitle { fill: #52514e; }
+  footer { display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+           margin: 2px 2px 0; font-size: 11.5px; color: #52514e; }
+  .chip { display: inline-flex; align-items: center; gap: 5px; }
+  .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .sw.bar { background: #2a78d6; }
+  .sw.hw { background: #2a78d6; transform: rotate(45deg); width: 8px; height: 8px; }
+  .sw.refl { background: #86b6ef; border: 1px solid #1c5cab; transform: rotate(45deg); width: 8px; height: 8px; }
+  .sw.brk { background: #e1e0d9; border: 1px solid #c3c2b7; }
+  .sw.today { background: #eda100; width: 3px; height: 12px; border-radius: 1px; }
+  .note { color: #898781; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><h1>Intro to Game Development — Fall 2026 — deliverables</h1><span class="sub">CMSC 445 / COAR 463 · VCU · classes Aug 18 – Dec 7 · finals Dec 8–15</span></header>
+<pre class="mermaid">
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "system-ui, sans-serif", "textColor": "#52514e", "taskBkgColor": "#2a78d6", "taskBorderColor": "#1c5cab", "taskTextColor": "#ffffff", "taskTextOutsideColor": "#0b0b0b", "activeTaskBkgColor": "#86b6ef", "activeTaskBorderColor": "#1c5cab", "doneTaskBkgColor": "#e1e0d9", "doneTaskBorderColor": "#c3c2b7", "sectionBkgColor": "rgba(137,135,129,0.07)", "altSectionBkgColor": "transparent", "gridColor": "#e1e0d9", "todayLineColor": "#eda100"}, "gantt": {"fontSize": 12, "sectionFontSize": 12, "barHeight": 22, "barGap": 6, "topPadding": 42, "leftPadding": 118}}}%%
+gantt
+    dateFormat YYYY-MM-DD
+    excludes 2026-09-07, 2026-10-16, 2026-11-03, 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26, 2026-11-27
+    axisFormat %b %e
+    tickInterval 1week
+    weekday monday
+    todayMarker stroke-width:4px,stroke:#eda100,opacity:0.45
+    section Welcome
+    Welcome : milestone, m0, 2026-08-18, 0d
+    section Unity Essentials
+    Unity Essentials : m1, 2026-08-18, 2026-09-14
+    R1. Unity badge : active, milestone, 2026-09-04, 0d
+    HW1. Unity showcase (solo) : milestone, 2026-09-10, 0d
+    section Solo project
+    Solo project : m2, 2026-09-14, 2026-09-28
+    HW2. Solo storyboard and coding (solo) : milestone, 2026-09-17, 0d
+    R2. First dip : active, milestone, 2026-09-18, 0d
+    HW3. Solo game (solo) : milestone, 2026-09-24, 0d
+    R3. Your first game : active, milestone, 2026-09-25, 0d
+    section Pair project 1
+    Pair project 1 : m3, 2026-09-28, 2026-10-12
+    HW4. Pair game 1 storyboard (group) : milestone, 2026-10-01, 0d
+    R4. Working in pairs 1 : active, milestone, 2026-10-02, 0d
+    HW5. Pair game 1 webgl (group) : milestone, 2026-10-08, 0d
+    R5. Working in pairs 2 : active, milestone, 2026-10-09, 0d
+    section Pair project 2
+    Pair project 2 : m4, 2026-10-12, 2026-10-26
+    HW6. Pair game 2 webgl (group) : milestone, 2026-10-22, 0d
+    R6. Working in pairs 3 : active, milestone, 2026-10-23, 0d
+    section Team project
+    Team project : m5, 2026-10-26, 2026-12-07
+    HW7. Three pitches (team) : milestone, 2026-10-29, 0d
+    R7. 4-person teamwork 1 : active, milestone, 2026-10-30, 0d
+    HW8. Pre-production (team) : milestone, 2026-11-05, 0d
+    R8. 4-person teamwork 2 : active, milestone, 2026-11-06, 0d
+    HW9. Minimum viable game (team) : milestone, 2026-11-12, 0d
+    R9. 4-person teamwork 3 : active, milestone, 2026-11-13, 0d
+    HW10. Draft game (team) : milestone, 2026-11-19, 0d
+    R10. 4-person teamwork 4 : active, milestone, 2026-11-20, 0d
+    R11. Final game : active, milestone, 2026-12-01, 0d
+    HW11. Final game (team) : milestone, 2026-12-03, 0d
+    section Fall break
+    Fall break : done, m6, 2026-11-23, 2026-11-30
+    section Finals
+    Finals : m7, 2026-12-08, 2026-12-15
+    HW12. Course evaluation (solo) : milestone, 2026-12-07, 0d
+    Final exam + Showcase (slot TBC) : milestone, 2026-12-11, 0d
+    R12. Best in Class : active, milestone, 2026-12-11, 0d
+</pre>
+<footer>
+<span class="chip"><span class="sw bar"></span>Module</span><span class="chip"><span class="sw hw"></span>HW due</span><span class="chip"><span class="sw refl"></span>Reflection due</span><span class="chip"><span class="sw brk"></span>No classes</span><span class="chip"><span class="sw today"></span>Today</span>
+<span class="note">No classes: Labor Day Mon Sep 7 · Reading Day Fri Oct 16 · Election Day Tue Nov 3 · Fall break Nov 23–29</span>
+</footer>
+</div>
+<script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, gantt: { useWidth: document.querySelector(".wrap").clientWidth - 8 } });
+</script>
+</body>
+</html>

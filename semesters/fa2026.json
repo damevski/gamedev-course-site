@@ -1,0 +1,53 @@
+{
+  "semester": "fa2026",
+  "title": "Intro to Game Development — Fall 2026",
+  "subtitle": "CMSC 445 / COAR 463 · VCU · classes Aug 18 – Dec 7 · finals Dec 8–15",
+  "no_class": [
+    { "date": "2026-09-07", "label": "Labor Day (university closed)" },
+    { "date": "2026-10-16", "label": "Reading Day — a FRIDAY: no class meeting" },
+    { "date": "2026-11-03", "label": "Election Day (university closed)" },
+    { "date": "2026-11-23", "label": "Fall break" },
+    { "date": "2026-11-24", "label": "Fall break" },
+    { "date": "2026-11-25", "label": "Fall break" },
+    { "date": "2026-11-26", "label": "Fall break" },
+    { "date": "2026-11-27", "label": "Fall break" }
+  ],
+  "no_class_caption": "No classes: Labor Day Mon Sep 7 · Reading Day Fri Oct 16 · Election Day Tue Nov 3 · Fall break Nov 23–29",
+  "modules": [
+    { "id": "m0", "name": "Welcome",          "start": "2026-08-18", "end": "2026-08-18" },
+    { "id": "m1", "name": "Unity Essentials", "start": "2026-08-18", "end": "2026-09-14" },
+    { "id": "m2", "name": "Solo project",     "start": "2026-09-14", "end": "2026-09-28" },
+    { "id": "m3", "name": "Pair project 1",   "start": "2026-09-28", "end": "2026-10-12" },
+    { "id": "m4", "name": "Pair project 2",   "start": "2026-10-12", "end": "2026-10-26" },
+    { "id": "m5", "name": "Team project",     "start": "2026-10-26", "end": "2026-12-07" },
+    { "id": "m6", "name": "Fall break",       "start": "2026-11-23", "end": "2026-11-30", "break": true },
+    { "id": "m7", "name": "Finals",           "start": "2026-12-08", "end": "2026-12-15" }
+  ],
+  "milestones": [
+    { "module": "m1", "name": "R1. Unity badge",                        "date": "2026-09-04", "kind": "reflection" },
+    { "module": "m1", "name": "HW1. Unity showcase (solo)",             "date": "2026-09-10", "kind": "hw" },
+    { "module": "m2", "name": "HW2. Solo storyboard and coding (solo)", "date": "2026-09-17", "kind": "hw" },
+    { "module": "m2", "name": "R2. First dip",                          "date": "2026-09-18", "kind": "reflection" },
+    { "module": "m2", "name": "HW3. Solo game (solo)",                  "date": "2026-09-24", "kind": "hw" },
+    { "module": "m2", "name": "R3. Your first game",                    "date": "2026-09-25", "kind": "reflection" },
+    { "module": "m3", "name": "HW4. Pair game 1 storyboard (group)",    "date": "2026-10-01", "kind": "hw" },
+    { "module": "m3", "name": "R4. Working in pairs 1",                 "date": "2026-10-02", "kind": "reflection" },
+    { "module": "m3", "name": "HW5. Pair game 1 webgl (group)",         "date": "2026-10-08", "kind": "hw" },
+    { "module": "m3", "name": "R5. Working in pairs 2",                 "date": "2026-10-09", "kind": "reflection" },
+    { "module": "m4", "name": "HW6. Pair game 2 webgl (group)",         "date": "2026-10-22", "kind": "hw" },
+    { "module": "m4", "name": "R6. Working in pairs 3",                 "date": "2026-10-23", "kind": "reflection" },
+    { "module": "m5", "name": "HW7. Three pitches (team)",              "date": "2026-10-29", "kind": "hw" },
+    { "module": "m5", "name": "R7. 4-person teamwork 1",                "date": "2026-10-30", "kind": "reflection" },
+    { "module": "m5", "name": "HW8. Pre-production (team)",             "date": "2026-11-05", "kind": "hw" },
+    { "module": "m5", "name": "R8. 4-person teamwork 2",                "date": "2026-11-06", "kind": "reflection" },
+    { "module": "m5", "name": "HW9. Minimum viable game (team)",        "date": "2026-11-12", "kind": "hw" },
+    { "module": "m5", "name": "R9. 4-person teamwork 3",                "date": "2026-11-13", "kind": "reflection" },
+    { "module": "m5", "name": "HW10. Draft game (team)",                "date": "2026-11-19", "kind": "hw" },
+    { "module": "m5", "name": "R10. 4-person teamwork 4",               "date": "2026-11-20", "kind": "reflection" },
+    { "module": "m5", "name": "R11. Final game",                        "date": "2026-12-01", "kind": "reflection" },
+    { "module": "m5", "name": "HW11. Final game (team)",                "date": "2026-12-03", "kind": "hw" },
+    { "module": "m7", "name": "HW12. Course evaluation (solo)",         "date": "2026-12-07", "kind": "hw" },
+    { "module": "m7", "name": "Final exam + Showcase (slot TBC)",       "date": "2026-12-11", "kind": "hw" },
+    { "module": "m7", "name": "R12. Best in Class",                     "date": "2026-12-11", "kind": "reflection" }
+  ]
+}

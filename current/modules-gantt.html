@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intro to Game Development — Fall 2026</title>
+<style>
+  body {
+    margin: 0; background: #ffffff;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #0b0b0b;
+  }
+  .wrap { padding: 8px 12px 10px; }
+  header { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 2px 2px 0; }
+  header h1 { font-size: 14px; font-weight: 650; margin: 0; }
+  header .sub { font-size: 12px; color: #52514e; }
+  .mermaid { width: 100%; font-family: system-ui, sans-serif; }
+  /* Recessive chrome: hairline grid, muted axis text (overrides Mermaid defaults) */
+  .mermaid svg .grid .tick line { stroke: #e1e0d9; stroke-width: 1; }
+  .mermaid svg .grid .tick text { fill: #898781; }
+  .mermaid svg .sectionTitle { fill: #52514e; }
+  footer { display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+           margin: 2px 2px 0; font-size: 11.5px; color: #52514e; }
+  .chip { display: inline-flex; align-items: center; gap: 5px; }
+  .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .sw.bar { background: #2a78d6; }
+  .sw.hw { background: #2a78d6; transform: rotate(45deg); width: 8px; height: 8px; }
+  .sw.refl { background: #86b6ef; border: 1px solid #1c5cab; transform: rotate(45deg); width: 8px; height: 8px; }
+  .sw.brk { background: #e1e0d9; border: 1px solid #c3c2b7; }
+  .sw.today { background: #eda100; width: 3px; height: 12px; border-radius: 1px; }
+  .note { color: #898781; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><h1>Intro to Game Development — Fall 2026</h1><span class="sub">CMSC 445 / COAR 463 · VCU · classes Aug 18 – Dec 7 · finals Dec 8–15</span></header>
+<pre class="mermaid">
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "system-ui, sans-serif", "textColor": "#52514e", "taskBkgColor": "#2a78d6", "taskBorderColor": "#1c5cab", "taskTextColor": "#ffffff", "taskTextOutsideColor": "#0b0b0b", "activeTaskBkgColor": "#86b6ef", "activeTaskBorderColor": "#1c5cab", "doneTaskBkgColor": "#e1e0d9", "doneTaskBorderColor": "#c3c2b7", "sectionBkgColor": "rgba(137,135,129,0.07)", "altSectionBkgColor": "transparent", "gridColor": "#e1e0d9", "todayLineColor": "#eda100"}, "gantt": {"fontSize": 12, "sectionFontSize": 12, "barHeight": 22, "barGap": 6, "topPadding": 42, "leftPadding": 118}}}%%
+gantt
+    dateFormat YYYY-MM-DD
+    excludes 2026-09-07, 2026-10-16, 2026-11-03, 2026-11-23, 2026-11-24, 2026-11-25, 2026-11-26, 2026-11-27
+    axisFormat %b %e
+    tickInterval 1week
+    weekday monday
+    todayMarker stroke-width:4px,stroke:#eda100,opacity:0.45
+    section Modules
+    Welcome : milestone, m0, 2026-08-18, 0d
+    Unity Essentials : m1, 2026-08-18, 2026-09-14
+    Solo project : m2, 2026-09-14, 2026-09-28
+    Pair project 1 : m3, 2026-09-28, 2026-10-12
+    Pair project 2 : m4, 2026-10-12, 2026-10-26
+    Team project : m5, 2026-10-26, 2026-12-07
+    Fall break : done, m6, 2026-11-23, 2026-11-30
+    Finals : m7, 2026-12-08, 2026-12-15
+</pre>
+<footer>
+<span class="chip"><span class="sw bar"></span>Module</span><span class="chip"><span class="sw brk"></span>No classes</span><span class="chip"><span class="sw today"></span>Today</span>
+<span class="note">No classes: Labor Day Mon Sep 7 · Reading Day Fri Oct 16 · Election Day Tue Nov 3 · Fall break Nov 23–29</span>
+</footer>
+</div>
+<script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+mermaid.initialize({ startOnLoad: true, gantt: { useWidth: document.querySelector(".wrap").clientWidth - 8 } });
+</script>
+</body>
+</html>
