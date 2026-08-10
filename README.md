@@ -4,8 +4,8 @@ Static support site for **CMSC 445 / COAR 463 — Intro to Game Development** (V
 
 ```
 semesters/fa2026.json     ← the ONLY file you edit each year (dates + deliverables)
-tools/generate.py         ← regenerates the HTML pages from the config (stdlib only)
-fa2026/                   ← generated pages for Fall 2026 (kept as archive later)
+tools/generate.py         ← regenerates the HTML pages from the config 
+fa2026/                   ← generated pages for Fall 2026 
 current/                  ← copies of the active semester's pages — Canvas points HERE
 index.html                ← landing page listing semesters
 ```
